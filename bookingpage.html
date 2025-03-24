@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seamless Booking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: url('https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            position: relative;
+        }
+
+        .booking-form {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            width: 100%;
+            max-width: 450px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .booking-form h2 {
+            color: #4a4a8d;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .booking-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #e6e6e6;
+            font-size: 16px;
+            color: #000000;
+            box-shadow: #000000b0 0 3px 3px 0;
+        }
+
+        .booking-form input::placeholder {
+            color: #999;
+        }
+
+        .booking-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4a4a8d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .booking-form button:hover {
+            background-color: #3b3b6e;
+        }
+
+        .text-content {
+            color: white;
+            text-align: right;
+        }
+
+        .text-content h1 {
+            font-size: 48px;
+            line-height: 1.2;
+        }
+
+        .text-content h1 span {
+            color: #4a4a8d;
+        }
+
+        .text-content p {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .airplane {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .airplane img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .airplane::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: 50px;
+            width: 60px;
+            height: 1px;
+            border-top: 2px dotted #4a4a8d;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .booking-form {
+                margin-bottom: 20px;
+            }
+
+            .text-content {
+                text-align: center;
+            }
+
+            .text-content h1 {
+                font-size: 36px;
+            }
+
+            .text-content p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="booking-form">
+            <h2>Booking</h2>
+            <input  type="text" placeholder="Name">
+            <input type="text" placeholder="Contact no">
+            <input type="text" placeholder="dd-mm-yyyy">
+            <input type="text" placeholder="No of people">
+            <button>SUBMIT</button>
+        </div>
+        <div class="text-content">
+            <h1 style="color: rgba(0, 0, 0, 0.836);">Seamless <span>Booking</span></h1>
+            <p style="color: rgb(0, 0, 0);">Unforgettable Experiences</p>
+        </div>
+    </div>
+    
+</body>
+</html>
