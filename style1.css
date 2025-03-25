@@ -23,9 +23,15 @@ body {
     color: black;
     font-weight: bold;
     margin: 0 15px;
+    border: 2px solid transparent;
+    padding: 5px;
+    border-radius: 30px;
 }
 .navbar a:hover{
-    text-decoration: underline;
+   border: 2px solid rgba(0, 0, 0, 0);
+   padding: 5px;
+   border-radius:30px ;
+   background-color: rgba(255, 255, 255, 0.603);
 }
 .logo {
     display: flex;
@@ -42,12 +48,12 @@ body {
     
     margin: 50px;
     padding:10px;
-    border-radius: 30px;
+    border-radius: 0px;
    
 }
 .hero img {
     width: 70%;
-    border-radius: 20px;
+    border-radius: 0px;
     height: 400px;
 }
 .explore-btn {
@@ -66,7 +72,9 @@ body {
     box-shadow: 5px 5px 5px black;
 }
 .explore-btn:hover{
-    text-decoration: underline;
+   
+    background: #546df5;
+    color: rgb(255, 196, 0);
 }
 footer {
    
@@ -134,10 +142,10 @@ footer span{
     margin-bottom: 15px;
     position: relative;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 0px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.568);
     transition: transform 0.3s ease;
-    border-radius: 20px;
+    border-radius: 0px;
 }
 
 .gallery-item:hover {

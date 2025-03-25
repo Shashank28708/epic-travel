@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Ujjain - Epic Journey</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .paragliding-section {
+            position: relative;
+            width: 100%;
+            height: 100vh; 
+            background-image: url(https://i.pinimg.com/736x/8a/b5/a9/8ab5a95adac1480f6d225b713db53140.jpg); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .paragliding-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
+            z-index: 1;
+        }
+
+        .paragliding-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.368);
+        }
+
+        .paragliding-content h2 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .paragliding-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .book-now-btn {
+            background-color: #1e3a8a; /* Dark blue */
+            color: white;
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .book-now-btn:hover {
+            background-color: #3b82f6; /* Lighter blue on hover */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .paragliding-section {
+                height: 80vh;
+            }
+
+            .paragliding-content h2 {
+                font-size: 36px;
+            }
+
+            .paragliding-content p {
+                font-size: 16px;
+            }
+
+            .book-now-btn {
+                padding: 10px 25px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .paragliding-section {
+                height: 70vh;
+            }
+
+            .paragliding-content h2 {
+                font-size: 28px;
+            }
+
+            .paragliding-content p {
+                font-size: 14px;
+            }
+
+            .book-now-btn {
+                padding: 8px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="paragliding-section">
+        <div class="paragliding-content">
+            <h2>Ujjain</h2>
+            <p>
+                One of the holiest cities in India, Ujjain is renowned for its ancient temples, spiritual significance, and the grand Kumbh Mela. Located on the banks of the Shipra River, it is home to the famous Mahakaleshwar Jyotirlinga, one of the 12 sacred Jyotirlingas of Lord Shiva. Other key attractions include Kal Bhairav Temple, Ram Ghat, and Sandipani Ashram. The best time to visit is October to March, with the Mahashivratri festival being a major highlight. Well-connected by rail and road, Ujjain is a must-visit for devotees and history lovers.
+            </p>
+            <a href="bookpage.html"><button class="book-now-btn">Book Now</button></a>
+        </div>
+    </section>
+</body>
+</html>
