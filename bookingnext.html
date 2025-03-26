@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero-section">
+        <div class="header">
+            <h1>Escape the Ordinary with Our Exclusive Travel Packages</h1>
+        </div>
+        <div class="overlay">
+            <div class="overlay-content">
+                <div class="button-group">
+                    <button class="icon-btn">
+                        <img src="https://imgs.search.brave.com/w1_oT54SlI43bYVVp3kqtDcCK_VNKIKgu9LzopK4-Tg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMjEvQWR2/ZW50dXJlLVBORy1U/cmFuc3BhcmVudC5w/bmc" alt="Explore Icon">
+                        Explore our packages
+                    </button>
+                    <button class="icon-btn">
+                        <img src="https://www.shutterstock.com/shutterstock/photos/1612794457/display_1500/stock-vector-adventure-motorcycle-cross-mountain-road-1612794457.jpg" alt="Bike Icon">
+                        Rent bikes
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background-image: url(untiteled.jpg); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    background-color: #1e3a8a; /* Dark blue background */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    
+}
+
+.overlay-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button-group {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.icon-btn img {
+    width: 50px;
+    height: 50px;
+}
+
+.icon-btn:hover {
+    color: #1e3a8a;
+}</style>
+</html>
