@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Epic Journey Login Page</title>
+    <title>Epic Journey - Login & Sign Up</title>
     <style>
         * {
             margin: 0;
@@ -23,7 +23,7 @@
         .container {
             display: flex;
             width: 800px;
-            height: 400px;
+            height: 450px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             overflow: hidden;
@@ -35,28 +35,30 @@
             background-size: cover;
         }
 
-        .login-section {
+        .form-section {
             flex: 1;
             background: #1e3c72;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
         }
 
-        .login-box {
+        .form-box {
             background: #f5f5f5;
-            padding: 40px;
+            padding: 30px;
             border-radius: 10px;
             width: 80%;
             text-align: center;
+            transition: all 0.3s ease;
         }
 
-        .login-box h2 {
+        .form-box h2 {
             margin-bottom: 20px;
             color: #1e3c72;
         }
 
-        .login-box input {
+        .form-box input {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
@@ -67,11 +69,11 @@
             font-size: 16px;
         }
 
-        .login-box input::placeholder {
+        .form-box input::placeholder {
             color: #888;
         }
 
-        .login-box button {
+        .form-box button {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
@@ -83,48 +85,89 @@
             cursor: pointer;
         }
 
-        .login-box button:hover {
+        .form-box button:hover {
             background: #2a5298;
         }
 
-        .google-signin {
+        .google-btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 20px;
+            background: #fff;
+            color: #1e3c72;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
         }
 
-        .google-signin img {
+        .google-btn img {
             width: 20px;
             margin-right: 10px;
         }
 
-        .google-signin a {
+        .google-btn:hover {
+            background: #f1f1f1;
+        }
+
+        .toggle-form {
+            margin-top: 10px;
             color: #1e3c72;
-            text-decoration: none;
+            cursor: pointer;
             font-size: 14px;
         }
 
-        .google-signin a:hover {
+        .toggle-form:hover {
             text-decoration: underline;
+        }
+
+        .hidden {
+            display: none;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="image-section"></div>
-        <div class="login-section">
-            <div class="login-box">
+        <div class="form-section">
+            <!-- Login Form -->
+            <div class="form-box" id="login-form">
                 <h2>Login</h2>
-                <input type="text" placeholder="username">
-                <input type="password" placeholder="password">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
                 <button>Sign In</button>
-                <div class="google-signin">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAABzElEQVR4Ab2WAUQDURjHDw0QIAQkAVBaMwvDJiMbY7QgFgAkAAGZZUASFiyAnQUEotMIGUKgAAYNWxY20Gyv9+d57d52X99mN/zcuee933vv/b+7sxKnyX9pxUORVixUkNe6pCMRQN3XVVuEMxbZ2E4Ej7WARwd9phbKGa/Izg2+aIwGxmAJsTUSMRcmSP2UFcgVqm0UDBzJjcKhZYSQcWZZIsVZjgz8pTEaGniI6mYnQnzCKothzfruFteFKeXL+Fh9J7DdfwyI4ZMlcIUUQDhnmRZeQDTKV3ZLnYU/wmdTiNWenReXqY6xQq8suZ6C8m6psiKFS21TiGeUTAnFDCQsQ6aEgRd/hN3c4oWL3VIIjdAgMMzQNCXvHjS9z1CVxWgtHt4lxaadIcuCkWBhgpS6Cv/jYU0E7YyGL+Ftt+vVVr0PidXKgUu4Y2de57U6PNfCVDWVM2WzSGP5nzwRmg0tBHLgTwg8pD3JkZcoaKfDmFj08k3E84NJstrY9xAHaoi85I6kpMB9T7dX90Tk9sqUuhI/NlNCxkJJXaVgfg99keKKQmf9JmJ7iTNlkg5P/SOMoOgzYmK+MGghkUIMpEKiV457pFMFaJ8z1i/ATnOr+aZzdAAAAABJRU5ErkJggg==" alt="Google Icon">
-                    <a href="#">sign in with google</a>
+                <div class="google-btn">
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="Google Logo">
+                    Continue with Google
                 </div>
+                <p class="toggle-form" onclick="toggleForms()">Don't have an account? Sign Up</p>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div class="form-box hidden" id="signup-form">
+                <h2>Sign Up</h2>
+                <input type="text" placeholder="Username">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="date" placeholder="Date of Birth">
+                <button>Create Account</button>
+                <div class="google-btn">
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="Google Logo">
+                    Continue with Google
+                </div>
+                <p class="toggle-form" onclick="toggleForms()">Already have an account? Login</p>
             </div>
         </div>
     </div>
+
+    <script>
+        function toggleForms() {
+            document.getElementById("login-form").classList.toggle("hidden");
+            document.getElementById("signup-form").classList.toggle("hidden");
+        }
+    </script>
 </body>
 </html>
