@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Package Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="package-details-container">
+        <!-- Left Section: Image -->
+        <div class="package-image" style="background-image: url('https://i.pinimg.com/736x/75/d9/b1/75d9b19a2cc095bb7b46b2052d861afc.jpg');"></div>
+
+        <!-- Right Section: Details -->
+        <div class="package-info">
+            <div class="price-section">
+                <p class="old-price">₹55,999</p>
+                <p class="new-price">₹48,999 <span>Per Person</span></p>
+                <p class="emi">No Cost EMI starts from ₹9,923 <a href="#">See option</a></p>
+            </div>
+           <a href="bookpage.html"> <button class="enquire-btn">Book Now</button></a>
+            <div class="details">
+                <p><strong>Duration:</strong> 5 Nights & 6 Days</p>
+                <p><strong>Places to Visit:</strong> 2N Gangtok | 2N Darjeeling | 1N Kalimpong</p>
+            </div>
+            <div class="inclusions">
+                <p><strong>Package Includes:</strong></p>
+                <div class="inclusion-icons">
+                    <img src="https://i.pinimg.com/736x/ab/82/cf/ab82cfc63bd77cb794b09acac96af0e1.jpg" alt="Flight">
+                    <img src="https://i.pinimg.com/736x/72/74/e7/7274e7aacb60184985dc0a036bc941fd.jpg" alt="Hotel">
+                    <img src="https://i.pinimg.com/474x/0a/d6/60/0ad66014d4cb55abee8653a2adb6f65d.jpg" alt="Sightseeing">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="tabs">
+        <button class="tab active">Overview</button>
+        <button class="tab">Day wise Itinerary</button>
+        <button class="tab">Inclusion/Exclusions</button>
+        <button class="tab">Additional Info</button>
+    </div>
+    <div class="itinerary-container">
+        <h2>Day Wise Itinerary</h2>
+        <div class="timeline">
+            <!-- Day 1 -->
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="day-circle">Day 1</div>
+                </div>
+                <div class="timeline-content">
+                    <h3>Day 1</h3>
+                    <p>Meet & Greet on arrival at NJP Railway Station / IXB Airport & transfer to Darjeeling (6,950 ft.). On arrival Check-in to hotel & rest of the day at leisure. Overnight stay at Darjeeling.</p>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="day-circle">Day 2</div>
+                </div>
+                <div class="timeline-content">
+                    <h3>Day 2</h3>
+                    <p>Early Morning (at 04:00 am) drive to Tiger hill (8,400 ft.) to watch the spectacular sunrise over Mt. Khangchendzongha (28,208 ft. Worlds 3rd highest peak), on your way back visit Ghoom Monastery and Batasia Loop. After breakfast visit Himalayan Mountaineering Institute, P.N. Zoological Park (Thursday closed), Tenzing Rock, Tibetan Refugee self-help Centre (Sunday closed), Tea Garden (outer view), Ropeway and Japanese Temple. Evening free for shopping or leisure. Overnight stay at Darjeeling.</p>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="day-circle">Day 3</div>
+                </div>
+                <div class="timeline-content">
+                    <h3>Day 3</h3>
+                    <p>After breakfast transfer to Kalimpong (3,950 ft.). On arrival check-in to your hotel. Afternoon enjoy half day tour of Kalimpong Visiting Mangal Dham, Deolo Hill, Dr. Graham’s Home, Golf Garden, Durpin Dara Hills & Pine View Nursery. Overnight stay at Kalimpong.</p>
+                </div>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="day-circle">Day 4</div>
+                </div>
+                <div class="timeline-content">
+                    <h3>Day 4</h3>
+                    <p>After breakfast transfer to Gangtok (5,500 ft.). On arrival check-in to your hotel. Afternoon proceed for a city tour visiting Flower show, Cottage Industry and Handicraft Centre, Institute of Tibetology, Dro-dul Chorten, Enchey Monastery & Banjakhri Falls (maximum 3-4 hours). Overnight stay at Gangtok.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.package-details-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.package-image {
+    width: 60%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.package-info {
+    width: 40%;
+    padding: 20px;
+    background-color: #f9faff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.price-section {
+    text-align: center;
+}
+
+.old-price {
+    font-size: 1.2rem;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.new-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
+}
+
+.new-price span {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #666;
+}
+
+.emi {
+    font-size: 0.9rem;
+    color: #333;
+    background-color: #e6ffe6;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+.emi a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.emi a:hover {
+    text-decoration: underline;
+}
+
+.enquire-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: center;
+}
+
+.enquire-btn:hover {
+    background-color: #0056b3;
+}
+
+.details p {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+.details strong {
+    color: #1e3a8a;
+}
+
+.inclusions p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.inclusions strong {
+    color: #1e3a8a;
+}
+
+.inclusion-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.inclusion-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tab {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.tab.active {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.tab:hover {
+    background-color: #e0e0e0;
+}
+
+.tab.active:hover {
+    background-color: #0056b3;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.itinerary-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.itinerary-container h2 {
+    font-size: 1.5rem;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 60px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #ccc;
+    border-style: dotted;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -60px;
+    top: 0;
+}
+
+.day-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.timeline-content {
+    background-color: #f0f7ff;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.timeline-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .itinerary-container {
+        padding: 15px;
+    }
+
+    .timeline {
+        padding-left: 50px;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-marker {
+        left: -50px;
+    }
+
+    .day-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .package-details-container {
+        flex-direction: column;
+    }
+
+    .package-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .package-info {
+        width: 100%;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+    }
+}
+</style>
+</html>
